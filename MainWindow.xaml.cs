@@ -10,7 +10,6 @@ namespace CybersecurityChatbotGUI
 {
     public partial class MainWindow : Window
     {
-        // Voice greeting plays at startup using greeting.wav
         public MainWindow()
         {
             // This dictionary handles keyword recognition for cybersecurity topics
@@ -19,6 +18,7 @@ namespace CybersecurityChatbotGUI
             AddBotMessage("Hello! 👋 Welcome to the Cybersecurity Awareness Bot!");
             AddBotMessage("What's your name?");
         }
+        // Voice greeting plays at startup using greeting.wav
 
         private void PlayVoiceGreeting()
         {
