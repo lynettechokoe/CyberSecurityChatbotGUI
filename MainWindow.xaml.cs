@@ -63,6 +63,7 @@ namespace CybersecurityChatbotGUI
             ChatPanel.Children.Add(bubble);
             ScrollToBottom();
         }
+        // Sentiment detection using keyword analysis for worried/confident moods
 
         private void AddUserMessage(string message)
         {
