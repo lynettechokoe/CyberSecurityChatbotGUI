@@ -13,6 +13,7 @@ namespace CybersecurityChatbotGUI
         // Voice greeting plays at startup using greeting.wav
         public MainWindow()
         {
+            // This dictionary handles keyword recognition for cybersecurity topics
             InitializeComponent();
             PlayVoiceGreeting();
             AddBotMessage("Hello! 👋 Welcome to the Cybersecurity Awareness Bot!");
