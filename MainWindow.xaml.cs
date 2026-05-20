@@ -108,6 +108,7 @@ namespace CybersecurityChatbotGUI
                 SendMessage();
             }
         }
+        // Conversation flow - handles "another tip" and "tell me more"
 
         private void SendMessage()
         {
