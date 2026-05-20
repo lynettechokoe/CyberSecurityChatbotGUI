@@ -98,6 +98,7 @@ namespace CybersecurityChatbotGUI
         {
             SendMessage();
         }
+        // Random responses using generic List<string> arrays
 
         private void UserInputTextBox_KeyDown(object sender, KeyEventArgs e)
         {
