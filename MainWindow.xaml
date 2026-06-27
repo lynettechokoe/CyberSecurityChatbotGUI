@@ -42,39 +42,54 @@
                       Background="#1a1a2e">
             <StackPanel x:Name="ChatPanel" Margin="10" />
         </ScrollViewer>
-        
-        <!-- INPUT AREA -->
-        <Border Grid.Row="2" Background="#16213e" Padding="10">
-            <Grid>
-                <Grid.ColumnDefinitions>
-                    <ColumnDefinition Width="*"/>
-                    <ColumnDefinition Width="Auto"/>
-                </Grid.ColumnDefinitions>
-                
-                <TextBox x:Name="UserInputTextBox"
-                         Grid.Column="0"
-                         FontSize="14"
-                         Padding="10"
-                         Background="#1a1a2e"
-                         Foreground="White"
-                         BorderBrush="#e94560"
-                         BorderThickness="1"
-                         KeyDown="UserInputTextBox_KeyDown"/>
-                
-                <Button x:Name="SendButton"
-                        Grid.Column="1"
-                        Content="Send"
-                        FontSize="14"
-                        FontWeight="Bold"
-                        Width="60"
-                        Height="40"
-                        Margin="10,0,0,0"
-                        Background="#e94560"
-                        Foreground="White"
-                        BorderThickness="0"
-                        Cursor="Hand"
-                        Click="SendButton_Click"/>
-            </Grid>
-        </Border>
+
+		<!-- INPUT AREA -->
+		<Border Grid.Row="2" Background="#16213e" Padding="10">
+			<Grid>
+				<Grid.RowDefinitions>
+					<RowDefinition Height="Auto"/>
+					<RowDefinition Height="Auto"/>
+				</Grid.RowDefinitions>
+				<Grid.ColumnDefinitions>
+					<ColumnDefinition Width="*"/>
+					<ColumnDefinition Width="Auto"/>
+				</Grid.ColumnDefinitions>
+
+				<!-- Quick Action Buttons -->
+				<StackPanel Grid.Row="0" Grid.ColumnSpan="2" Orientation="Horizontal" Margin="0,0,0,5" HorizontalAlignment="Center">
+					<Button Content="📋 Show Tasks" Background="#0f3460" Foreground="White" BorderThickness="0" Padding="10,5" Margin="2" Click="QuickAction_Click" Tag="show tasks"/>
+					<Button Content="📝 Add Task" Background="#0f3460" Foreground="White" BorderThickness="0" Padding="10,5" Margin="2" Click="QuickAction_Click" Tag="add task"/>
+					<Button Content="⏰ Set Reminder" Background="#0f3460" Foreground="White" BorderThickness="0" Padding="10,5" Margin="2" Click="QuickAction_Click" Tag="set reminder"/>
+					<Button Content="📊 Start Quiz" Background="#0f3460" Foreground="White" BorderThickness="0" Padding="10,5" Margin="2" Click="QuickAction_Click" Tag="start quiz"/>
+					<Button Content="📜 Activity Log" Background="#0f3460" Foreground="White" BorderThickness="0" Padding="10,5" Margin="2" Click="QuickAction_Click" Tag="show activity log"/>
+				</StackPanel>
+
+				<TextBox x:Name="UserInputTextBox"
+						 Grid.Row="1"
+						 Grid.Column="0"
+						 FontSize="14"
+						 Padding="10"
+						 Background="#1a1a2e"
+						 Foreground="White"
+						 BorderBrush="#e94560"
+						 BorderThickness="1"
+						 KeyDown="UserInputTextBox_KeyDown"/>
+
+				<Button x:Name="SendButton"
+						Grid.Row="1"
+						Grid.Column="1"
+						Content="Send"
+						FontSize="14"
+						FontWeight="Bold"
+						Width="60"
+						Height="40"
+						Margin="10,0,0,0"
+						Background="#e94560"
+						Foreground="White"
+						BorderThickness="0"
+						Cursor="Hand"
+						Click="SendButton_Click"/>
+			</Grid>
+		</Border>
     </Grid>
 </Window>
