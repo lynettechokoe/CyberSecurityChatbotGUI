@@ -155,3 +155,106 @@ A comprehensive cybersecurity awareness application with console chatbot, WPF GU
 1. **Clone the repository:**
    
    git clone https://github.com/YOUR-USERNAME/CybersecurityChatbotGUI.git
+   Open the project in Visual Studio 2022:
+
+Double-click CybersecurityChatbotGUI.sln
+
+Ensure greeting.wav is included:
+
+Check that greeting.wav is in the project
+
+Set "Copy to Output Directory" to "Copy if newer"
+
+Build the project:
+
+Press Ctrl+Shift+B or go to Build → Build Solution
+
+Run the application:
+
+Press F5 or click the green Start button
+
+Interact with the chatbot:
+
+Type your name when asked
+
+Use commands like "Add task", "Start quiz", "Show activity log"
+
+🎯 Test Values That Work
+Commands to Test
+Command	What It Does
+Add task to enable 2FA	Adds a task
+Remind me to update password	Sets a reminder
+Start quiz	Begins quiz
+1 (during quiz)	Answers question
+Show activity log	Shows log
+What have you done for me?	Shows log
+Show tasks	Shows all tasks
+phishing	Shows phishing tips
+passwords	Shows password tips
+privacy	Shows privacy tips
+tip	Shows random tip
+remember	Shows what bot remembers
+exit	Exits program
+Quick Action Buttons
+The GUI includes these quick action buttons:
+
+📋 Show Tasks
+
+📝 Add Task
+
+⏰ Set Reminder
+
+📊 Start Quiz
+
+📜 Activity Log
+
+📦 Stored Messages Menu Options
+Option	Function
+a	Display all stored messages (sender and recipient)
+b	Display the longest stored message
+c	Search for a message by ID
+d	Search for messages by recipient
+e	Delete a message by hash
+f	Display full report
+g	Back to Main Menu
+💻 Coding Constructs Used
+Construct	Where Used
+Variables	string, int, bool, List<T>, Dictionary<TKey, TValue>
+Variable Scope	Instance, static, local
+Data Types	string, int, bool, char, DateTime
+Classes	MainWindow, UserData, TaskItem, ReminderItem, ActivityLogEntry, QuizQuestion, ChatMessage
+Methods	Getters, setters, validation, storage, parsing
+Operators	&&, ||, ==, !=, ??
+Decisions	if-else, switch statements
+Loops	while, for, foreach
+Arrays	string[], List<T>, Dictionary<TKey, TValue>
+File I/O	System.IO.File, SoundPlayer for WAV files
+Delegates	ResponseGenerator delegate for dynamic responses
+Auto-Properties	{ get; set; } in UserData class
+Generic Collections	List<T>, Dictionary<TKey, TValue>
+🧪 Unit Tests
+Part 1 Tests (Console Chatbot)
+Test	Description
+TestNameValidation	Validates non-empty name input
+TestSentimentDetection	Detects worried, curious, frustrated
+TestMemoryStorage	Verifies name and topic storage
+TestPhishingResponse	Returns phishing tips
+TestPasswordResponse	Returns password tips
+Part 2 Tests (GUI)
+Test	Description
+TestKeywordRecognition	Detects "password", "scam", "privacy"
+TestRandomResponse	Returns different responses each time
+TestConversationFlow	Handles "another tip", "tell me more"
+TestErrorHandling	Returns default for unknown inputs
+Part 3 Tests (NLP & Activity Log)
+Test	Description
+TestTaskExtraction	Extracts task from natural language
+TestReminderExtraction	Extracts reminder from natural language
+TestQuizScoreTracking	Tracks quiz scores correctly
+TestActivityLog	Logs actions with timestamps
+TestLogDisplay	Shows last 5-10 actions
+🏷️ GitHub Releases
+Release	Tag	Title	Features
+1	v1.0	Version 1.0 - Initial GUI Release	Console chatbot + WPF GUI
+2	v1.1	Version 1.1 - Enhanced Features	Keyword recognition, random responses, conversation flow
+3	v1.2	Version 1.2 - NLP & Activity Log	NLP simulation, tasks, reminders, quiz, activity log
