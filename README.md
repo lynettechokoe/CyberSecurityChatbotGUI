@@ -154,7 +154,7 @@ A comprehensive cybersecurity awareness application with console chatbot, WPF GU
 
 1. **Clone the repository:**
    
-   git clone https://github.com/YOUR-USERNAME/CybersecurityChatbotGUI.git
+   https://github.com/lynettechokoe/CyberSecurityChatbotGUI.git
    Open the project in Visual Studio 2022:
 
 Double-click CybersecurityChatbotGUI.sln
