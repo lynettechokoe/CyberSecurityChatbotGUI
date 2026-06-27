@@ -140,3 +140,18 @@ A comprehensive cybersecurity awareness application with console chatbot, WPF GU
 | `.github/workflows/main.yml` | GitHub Actions CI pipeline |
 
 ### Code Structure
+
+---
+
+## 🚀 How to Run
+
+### Prerequisites
+- Windows OS
+- Visual Studio 2022
+- .NET Framework 4.8
+
+### Steps
+
+1. **Clone the repository:**
+   
+   git clone https://github.com/YOUR-USERNAME/CybersecurityChatbotGUI.git
