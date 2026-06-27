@@ -258,3 +258,68 @@ Release	Tag	Title	Features
 1	v1.0	Version 1.0 - Initial GUI Release	Console chatbot + WPF GUI
 2	v1.1	Version 1.1 - Enhanced Features	Keyword recognition, random responses, conversation flow
 3	v1.2	Version 1.2 - NLP & Activity Log	NLP simulation, tasks, reminders, quiz, activity log
+🔗 References
+Resource	Link
+WPF Documentation	https://docs.microsoft.com/en-us/dotnet/desktop/wpf/
+C# SoundPlayer	https://docs.microsoft.com/en-us/dotnet/api/system.media.soundplayer
+Generic Collections	https://docs.microsoft.com/en-us/dotnet/standard/collections/
+Delegates in C#	https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/delegates/
+GitHub Actions	https://docs.github.com/en/actions
+WPF Color Reference	https://docs.microsoft.com/en-us/dotnet/desktop/wpf/graphics-multimedia/colors
+📝 Conclusion
+This application successfully implements all required features across all three parts:
+
+Part 1 Achievements
+✅ Console chatbot with voice greeting and ASCII art
+
+✅ Auto-implemented properties for user data
+
+✅ Memory and sentiment detection
+
+✅ GitHub Actions CI with green check mark
+
+✅ 6+ commits on GitHub
+
+Part 2 Achievements
+✅ WPF GUI with chat bubbles and professional design
+
+✅ All Part 1 features translated to GUI
+
+✅ Keyword recognition with Dictionary<string, List<string>>
+
+✅ Random responses using arrays and lists
+
+✅ Delegates for dynamic responses
+
+✅ 2 releases on GitHub
+
+Part 3 Achievements
+✅ NLP simulation with keyword detection
+
+✅ Task management system
+
+✅ Reminder system
+
+✅ Cybersecurity quiz (5 questions)
+
+✅ Activity log with timestamps
+
+✅ Generic collections (List<T>, Dictionary<TKey, TValue>)
+
+✅ 3 releases on GitHub
+
+Total Features: 20+ features implemented
+Total Code Files: 6 files
+Total GitHub Commits: 6+ commits
+Total GitHub Releases: 3 releases
+
+👤 Author
+Created for the Department of Cybersecurity Awareness Campaign - South Africa
+
+Student: [Your Name]
+Module: Programming 2A
+Year: 2026
+
+📄 License
+This project is submitted as part of academic requirements for Programming 2A.
+
